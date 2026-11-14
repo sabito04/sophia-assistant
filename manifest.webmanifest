@@ -1,0 +1,10 @@
+{
+  "name": "SOPHIA — Assistante personnelle",
+  "short_name": "SOPHIA",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#111329",
+  "theme_color": "#111329",
+  "description": "Prototype de l'assistante personnelle Sophia",
+  "icons": []
+}

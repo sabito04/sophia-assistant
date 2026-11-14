@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#111329">
+  <title>SOPHIA — Assistante personnelle</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header><div class="orb" aria-hidden="true"></div>
+      <p class="eyebrow">YOUR PERSONAL ASSISTANT</p>
+      <h1>SOPHIA</h1><p class="sub">Ton assistante intelligente</p>
+    </header>
+    <section class="panel">
+      <p id="status" class="status">Prête à discuter</p>
+      <div id="conversation" class="conversation" aria-live="polite">
+        <p class="bubble sophia">Bonjour ! Je suis Sophia. Appuie sur le micro et dis « Bonjour Sophia » pour commencer.</p>
+      </div>
+      <button id="mic" class="mic" aria-label="Parler à Sophia">🎙️</button>
+      <p class="hint">Appuie pour parler · dis « Bonjour Sophia »</p>
+      <label for="language">Langue de reconnaissance</label>
+      <select id="language">
+        <option value="fr-FR">Français</option>
+        <option value="ht-HT">Créole haïtien (si pris en charge par ton navigateur)</option>
+        <option value="en-US">English</option>
+        <option value="es-ES">Español</option>
+      </select>
+      <label for="voice">Voix de Sophia</label>
+      <select id="voice"><option value="">Voix féminine disponible (automatique)</option></select>
+    </section>
+    <footer>Prototype 1.0 · La reconnaissance vocale dépend du navigateur et de la connexion.</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
