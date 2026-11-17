@@ -315,3 +315,191 @@ if (
       .catch(() => {});
   });
 }
+
+/* SOPHIA - MEMOIRE PERSONNELLE */
+
+const sophiaMemory = JSON.parse(
+  localStorage.getItem("sophia_personal_memory") || "{}"
+);
+
+sophiaMemory.name = "Yvener";
+
+function saveSophiaMemory(key, value) {
+  sophiaMemory[key] = value;
+  localStorage.setItem(
+    "sophia_personal_memory",
+    JSON.stringify(sophiaMemory)
+  );
+}
+
+function getSophiaMemory() {
+  return sophiaMemory;
+}
+
+function rememberUser(message) {
+  const text = message.trim();
+
+  const nameMatch = text.match(
+    /(?:mon prénom est|je m'appelle|appelle-moi)\s+(.+)/i
+  );
+
+  if (nameMatch) {
+    saveSophiaMemory("name", nameMatch[1].trim());
+  }
+
+  const preferenceMatch = text.match(
+    /(?:je préfère|j'aime|je n'aime pas)\s+(.+)/i
+  );
+
+  if (preferenceMatch) {
+    const preferences = sophiaMemory.preferences || [];
+    preferences.push(preferenceMatch[0]);
+    saveSophiaMemory("preferences", preferences);
+  }
+}
+
+function clearSophiaPersonalMemory() {
+  localStorage.removeItem("sophia_personal_memory");
+  location.reload();
+}
+
+/* SOPHIA - MEMOIRE PERSONNELLE */
+
+const sophiaMemory = JSON.parse(
+  localStorage.getItem("sophia_personal_memory") || "{}"
+);
+
+sophiaMemory.name = "Yvener";
+
+function saveSophiaMemory(key, value) {
+  sophiaMemory[key] = value;
+  localStorage.setItem(
+    "sophia_personal_memory",
+    JSON.stringify(sophiaMemory)
+  );
+}
+
+function getSophiaMemory() {
+  return sophiaMemory;
+}
+
+function rememberUser(message) {
+  const text = message.trim();
+
+  const nameMatch = text.match(
+    /(?:mon prénom est|je m'appelle|appelle-moi)\s+(.+)/i
+  );
+
+  if (nameMatch) {
+    saveSophiaMemory("name", nameMatch[1].trim());
+  }
+
+  const preferenceMatch = text.match(
+    /(?:je préfère|j'aime|je n'aime pas)\s+(.+)/i
+  );
+
+  if (preferenceMatch) {
+    const preferences = sophiaMemory.preferences || [];
+    preferences.push(preferenceMatch[0]);
+    saveSophiaMemory("preferences", preferences);
+  }
+}
+
+function clearSophiaPersonalMemory() {
+  localStorage.removeItem("sophia_personal_memory");
+  location.reload();
+}
+
+/* SOPHIA - MEMOIRE PERSONNELLE */
+
+const sophiaMemory = JSON.parse(
+  localStorage.getItem("sophia_personal_memory") || "{}"
+);
+
+sophiaMemory.name = "Yvener";
+
+function saveSophiaMemory(key, value) {
+  sophiaMemory[key] = value;
+  localStorage.setItem(
+    "sophia_personal_memory",
+    JSON.stringify(sophiaMemory)
+  );
+}
+
+function getSophiaMemory() {
+  return sophiaMemory;
+}
+
+function rememberUser(message) {
+  const text = message.trim();
+
+  const nameMatch = text.match(
+    /(?:mon prénom est|je m'appelle|appelle-moi)\s+(.+)/i
+  );
+
+  if (nameMatch) {
+    saveSophiaMemory("name", nameMatch[1].trim());
+  }
+
+  const preferenceMatch = text.match(
+    /(?:je préfère|j'aime|je n'aime pas)\s+(.+)/i
+  );
+
+  if (preferenceMatch) {
+    const preferences = sophiaMemory.preferences || [];
+    preferences.push(preferenceMatch[0]);
+    saveSophiaMemory("preferences", preferences);
+  }
+}
+
+function clearSophiaPersonalMemory() {
+  localStorage.removeItem("sophia_personal_memory");
+  location.reload();
+}
+/* SOPHIA - MEMOIRE PERSONNELLE */
+
+const sophiaMemory = JSON.parse(
+  localStorage.getItem("sophia_personal_memory") || "{}"
+);
+
+sophiaMemory.name = "Yvener";
+
+function saveSophiaMemory(key, value) {
+  sophiaMemory[key] = value;
+  localStorage.setItem(
+    "sophia_personal_memory",
+    JSON.stringify(sophiaMemory)
+  );
+}
+
+function getSophiaMemory() {
+  return sophiaMemory;
+}
+
+function rememberUser(message) {
+  const text = message.trim();
+
+  const nameMatch = text.match(
+    /(?:mon prénom est|je m'appelle|appelle-moi)\s+(.+)/i
+  );
+
+  if (nameMatch) {
+    saveSophiaMemory("name", nameMatch[1].trim());
+  }
+
+  const preferenceMatch = text.match(
+    /(?:je préfère|j'aime|je n'aime pas)\s+(.+)/i
+  );
+
+  if (preferenceMatch) {
+    const preferences = sophiaMemory.preferences || [];
+    preferences.push(preferenceMatch[0]);
+    saveSophiaMemory("preferences", preferences);
+  }
+}
+
+function clearSophiaPersonalMemory() {
+  localStorage.removeItem("sophia_personal_memory");
+  location.reload();
+}
+
